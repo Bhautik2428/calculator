@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body >
+  	<div class="main">
+  		<form name="form">
+                <input class="textview" name="textview" placeholder="0" style="overflow: scroll; " id="oprands" disable>
+            </form>
+  		<table>
+  			<tr>
+  				<td>
+                    <div class="button" id="clean" onclick="clean()">
+                    	<div class="inner">C</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="back()">
+                    	<div class="inner">
+                    		<img id="img" src="Clear (1).png">
+                    	</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="opt('/')">
+                    	<div class="inner">÷</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" id="mul" onclick="opt('*')">
+                    	<div class="inner" >×</div>
+                    </div>
+                </td>
+            </tr>
+  			</tr>
+
+  			<tr>
+  				<td>
+                    <div class="button none" onclick="insert(7)" >
+                    	<div class="inner">7</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="insert(8)">
+                        <div class="inner">8</div>	
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="insert(9)">
+                    	<div class="inner">9</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" id="sub" onclick="opt('-')">
+                    	<div class="inner"  >-</div>
+                    </div>
+                </td>
+  			</tr>
+
+  			<tr>
+  				<td>
+                    <div class="button none" onclick="insert(4)">
+                    	<div class="inner">4</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="insert(5)">
+                        <div class="inner">5</div>	
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="insert(6)">
+                    	<div class="inner">6</div>
+                    </div>
+                </td>
+                <td rowspan="2" id="plus">
+                    <div class="button none" id="first"  onclick="opt('+')">
+                    	<div class="inner">+</div>
+                    </div>
+                </td>
+  			</tr>
+  			
+
+  			<tr>
+  				<td>
+                    <div class="button none" onclick="insert(1)">
+                    	<div class="inner">1</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="insert(2)">
+                        <div class="inner">2</div>	
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="insert(3)">
+                    	<div class="inner">3</div>
+                    </div>
+                </td>
+  			</tr>
+  			
+  			<tr>
+  				<td>
+                    <div class="button none" onclick="insert(0)">
+                    	<div class="inner">0</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="button none" onclick="insert('.')">
+                        <div class="inner">.</div>	
+                    </div>
+                </td>
+				<td rowspan="2">
+                    <div class="button none" id="equal" onclick="equal()">
+                    	<div id="second" class="inner" >=</div>
+                    </div>
+                </td>
+  			</tr>
+		</table>
+  	</div>
+  	<script type="text/javascript" src="script.js">
+  	</script>
+  </body>
+</html>
