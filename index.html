@@ -9,7 +9,8 @@
   <body >
   	<div class="main">
   		<form name="form">
-                <input class="textview" name="textview" placeholder="0" style="overflow: scroll; " id="oprands" disable>
+            <input class="textview" name="textview" placeholder="0" style="overflow: scroll; " id="oprands" disable>
+            <input type="submit" name="" onclick="equal()" style="display: none;"> 
             </form>
   		<table>
   			<tr>
@@ -115,14 +116,13 @@
                     </div>
                 </td>
 				<td rowspan="2">
-                    <div class="button none" id="equal" onclick="equal()">
+                    <div class="button none" id="equal" onclick="equal()" onkeyup="clickkeyup(c)">
                     	<div id="second" class="inner" >=</div>
                     </div>
                 </td>
   			</tr>
 		</table>
   	</div>
-  	<script type="text/javascript" src="script.js">
-  	</script>
+  	<script type="text/javascript" src="script.js"></script>
   </body>
 </html>

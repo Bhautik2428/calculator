@@ -15,13 +15,14 @@ function equal() {
     var a = document.form.textview;
     var exp = a.value;
 
+
     if (exp) {
         try {
             a.value = eval(exp);
         }
         catch (e) {
-            document.form.textview.value = 'Syntax Error!';
-            none();
+             document.form.textview.value = 'Syntax Error!';
+             none();
         }
     }
 
@@ -30,10 +31,10 @@ function equal() {
     }
 
     if(a.value == 'Infinity'){
-       document.form.textview.value = "Can't divide by Zero!";
-       button.onclick ='none()';
-       alert('Can\'t divide by Zero!')
-       none();
+        document.form.textview.value = "Can't divide by Zero!";
+        button.onclick ='none()';
+        alert('Can\'t divide by Zero!')
+        none();
     }
 }
 
